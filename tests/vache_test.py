@@ -18,7 +18,6 @@ def test_should_create_vache_given_valid_state():
     # Assert (1 assertion métier)
     assert poids == 450.0
 
-
 @pytest.mark.parametrize("petitNom", ["", "   ", "\n\t"])
 def test_should_raise_invalid_vache_exception_given_empty_petit_nom(petitNom):
     # Arrange / Act / Assert
@@ -175,3 +174,4 @@ def test_should_raise_invalid_vache_exception_given_age_max_when_vieillir():
     # Act / Assert
     with pytest.raises(InvalidVacheException):
         vache.vieillir()
+

@@ -1,0 +1,2 @@
+class NoMilkStrategy:
+    pass
