@@ -9,7 +9,7 @@ class Vache:
     POIDS_MAX = 1000.0
     PANSE_MAX = 50.0
     POIDS_MIN = 2.0
-    RENDEMENT_RUMINATION =
+
 
     def __init__(self, petitNom: str, poids: float, age: int):
         if not petitNom or petitNom.strip() == "":
@@ -24,7 +24,7 @@ class Vache:
         self.age = age
         self.panse = 0.0
 
-        _rumination_strategy: RuminationStrategy = NoMilkStrategy()
+
 
     def brouter(self, broute: float, nourriture=None):
         if nourriture!=None:
