@@ -1,6 +1,9 @@
+from typing import Protocol
+
+from vaches.domain.stratégies.protocols.Rumination_strategy import Rumination_strategy
 
 
-class NoMilkStrategy:
+class NoMilkStrategy():
 
     def calculer_lait(self, vache: "Vache", panse_avant: float)-> float:
         return 0.0
